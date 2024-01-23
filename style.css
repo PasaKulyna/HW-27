@@ -1,0 +1,38 @@
+.box {
+width: 30px;
+height: 1000px;
+background-color: grey;
+position: absolute;
+left: 0;
+top: 0;
+}
+.box:hover {
+    width: 300px;
+}
+.box:hover .box-text {
+    opacity: 0;
+}
+.box-text {
+    color: #fff;
+    writing-mode: vertical-rl;
+   text-align: center;
+   display: block;
+   position: relative;
+}
+.box-list {
+    opacity: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.box:hover .box-list {
+    opacity: 1;
+}
+.list-link {
+    color: #fff;
+    text-decoration: none;
+}
+.list-link:hover {
+    color: chocolate;
+}
